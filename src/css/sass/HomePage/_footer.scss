@@ -1,0 +1,36 @@
+.footer-section {
+  color: #fff;
+  background: $abcolor;
+  text-align: center;
+  position: relative;
+  line-height: 50vh;
+
+  span {
+    display: inline-block;
+    line-height: 50vh;
+    .arrow {
+      img {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 32%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    span {
+      display: inline-block;
+      transform: rotate(-90deg);
+      .text-arrow {
+        text-decoration: none;
+        color: $mainorange;
+        font-size: 16px;
+        transition: 500ms color;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

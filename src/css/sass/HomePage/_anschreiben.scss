@@ -1,0 +1,102 @@
+.bewerbung-section {
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  .anschreiben-bild {
+    flex: 1;
+    align-self: center;
+    align-content: center;
+    padding-right: 50px;
+    padding-top: 50px;
+    .cow-img {
+      width: 100%;
+    }
+  }
+  .anschreiben {
+    padding-top: 150px;
+    align-self: auto;
+    flex: 1.1;
+    span {
+      color: $hgray;
+    }
+    h2 {
+      &::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 5px;
+        background: $green;
+        margin: 25px 0;
+      }
+      color: #081f2c;
+      letter-spacing: normal;
+    }
+    p {
+      margin-bottom: 40px;
+    }
+    .btn-effect {
+      text-decoration: none;
+      border: 2px solid $purpul;
+      padding: 14px 120px 14px 20px;
+      color: #000;
+      text-transform: uppercase;
+      font-size: 15px;
+      position: relative;
+      overflow: hidden;
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        width: 100%;
+        height: 0%;
+        background: $purpul;
+        z-index: -1;
+        transition: 600ms all ease;
+      }
+      &:hover::before {
+        height: 400%;
+      }
+    }
+  }
+}
+
+/* media query  */
+@media screen and (max-width: 1000px) {
+  .bewerbung-section {
+    .anschreiben-bild {
+      padding-right: 10px;
+    }
+    .anschreiben {
+      padding-top: 70px;
+      h2 {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+/* media query  */
+@media screen and (max-width: 850px) {
+  .bewerbung-section {
+    .anschreiben-bild {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .bewerbung-section {
+    height: auto;
+    .anschreiben-bild {
+      padding-right: 10px;
+    }
+    .anschreiben {
+      padding-top: 70px;
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  }
+}

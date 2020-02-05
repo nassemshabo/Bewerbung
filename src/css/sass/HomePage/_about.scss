@@ -1,0 +1,57 @@
+.about-section {
+  background: $abcolor;
+  color: #fff;
+  padding: 90px 0 0 0;
+  height: 100vh;
+
+  .about {
+    display: flex;
+
+    .about-pic {
+      flex: 1;
+      align-content: center;
+      .about-img {
+        width: 100%;
+        height: 80vh;
+        opacity: 0.8;
+        object-fit: cover;
+        border: 5px solid #fff;
+      }
+    }
+    .about-p {
+      flex: 1;
+      padding: 50px;
+      h2 {
+        &::after {
+          content: "";
+          display: block;
+          width: 60px;
+          height: 5px;
+          background: rgba(11, 156, 240, 0.986);
+          margin: 20px 0 25px;
+        }
+      }
+      p {
+        color: rgb(226, 224, 224);
+        line-height: 1.7;
+      }
+    }
+  }
+}
+
+/* media query  */
+@media screen and (max-width: 850px) {
+  .about-section {
+    .about {
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+      .about-pic {
+        display: none;
+      }
+      .about-p {
+        padding: 0;
+      }
+    }
+  }
+}

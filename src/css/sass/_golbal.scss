@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fira Sans Condensed", sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+h2 {
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 3.25rem;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 16px;
+  color: #555555;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+span {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1;
+}
+
+/* media query */
+@media screen and (max-width: 650px) {
+  span {
+    font-size: 18px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
