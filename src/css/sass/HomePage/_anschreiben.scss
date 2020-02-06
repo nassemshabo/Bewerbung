@@ -36,13 +36,14 @@
     }
     .btn-effect {
       text-decoration: none;
-      border: 2px solid $purpul;
-      padding: 14px 120px 14px 20px;
-      color: #000;
       text-transform: uppercase;
       font-size: 15px;
       position: relative;
       overflow: hidden;
+      display: inline-block;
+      padding: 14px 60px 14px 20px;
+      color: #000;
+      border: 2px solid $green;
       &::before {
         content: "";
         display: block;
@@ -52,7 +53,7 @@
         transform: translate(-50%, -50%) rotate(45deg);
         width: 100%;
         height: 0%;
-        background: $purpul;
+        background: $green;
         z-index: -1;
         transition: 600ms all ease;
       }
