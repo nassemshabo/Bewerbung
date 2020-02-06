@@ -1,5 +1,5 @@
 .header-section {
-  background-image: url("/img/header1.jpg");
+  background-image: url("./img/header1.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -141,7 +141,7 @@
   .header-section {
     .main-header {
       h2 {
-        font-size: 40px;
+        font-size: 41px;
       }
     }
   }
