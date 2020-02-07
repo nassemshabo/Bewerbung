@@ -30,7 +30,6 @@
           color: $mainorange;
           font-size: 16px;
           transition: 500ms color;
-
           &:hover {
             color: #fff;
           }
@@ -84,7 +83,7 @@
         transition: 600ms all ease;
       }
       &:hover::before {
-        height: 400%;
+        height: 340%;
       }
     }
   }

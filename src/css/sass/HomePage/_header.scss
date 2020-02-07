@@ -117,6 +117,9 @@
       font-size: 70px;
       margin-left: 20px;
       color: #fff;
+      .fab {
+        color: #fff;
+      }
       &:hover {
         cursor: pointer;
         color: $purpul;
