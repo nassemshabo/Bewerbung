@@ -44,8 +44,8 @@
       justify-content: center;
 
       .box {
-        width: 405px;
-        height: 405px;
+        width: 30%;
+        height: 480px;
         margin: 10px 0;
         cursor: pointer;
         position: relative;
@@ -87,7 +87,7 @@
             transform: rotate(-5deg);
             font-weight: 600;
             background: rgba(51, 51, 51, 0.801);
-            padding: 20px 20px;
+            padding: 25px 20px;
             color: #fff;
           }
         }
@@ -149,6 +149,20 @@
           span {
             color: #fff;
           }
+        }
+      }
+    }
+  }
+}
+
+/* media query */
+@media screen and (max-width: 1300px) {
+  .lebenslauf-section {
+    .lebenslauf {
+      .box-container {
+        .box {
+          width: 405px;
+          height: 405px;
         }
       }
     }
