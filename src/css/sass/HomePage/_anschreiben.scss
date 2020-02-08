@@ -73,7 +73,6 @@
       padding-right: 10px;
     }
     .anschreiben {
-      padding-top: 70px;
       h2 {
         font-size: 3rem;
       }
@@ -83,15 +82,18 @@
 /* media query  */
 @media screen and (max-width: 1250px) {
   .bewerbung-section {
+    height: auto;
     .anschreiben-bild {
       display: none;
+    }
+    .anschreiben {
+      padding: 60px 0;
     }
   }
 }
 
 @media screen and (max-width: 650px) {
   .bewerbung-section {
-    height: auto;
     padding-bottom: 50px;
     .anschreiben-bild {
       padding-right: 10px;
