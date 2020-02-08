@@ -45,7 +45,7 @@
 
       .box {
         width: 30%;
-        height: 480px;
+        height: 430px;
         margin: 10px 0;
         cursor: pointer;
         position: relative;
@@ -156,7 +156,32 @@
 }
 
 /* media query */
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1500px) {
+  .lebenslauf-section {
+    .lebenslauf {
+      .box-container {
+        .box {
+          width: 405px;
+          height: 405px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1420px) {
+  .lebenslauf-section {
+    .lebenslauf {
+      .box-container {
+        .box {
+          width: 28%;
+          height: 405px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1250px) {
   .lebenslauf-section {
     .lebenslauf {
       .box-container {

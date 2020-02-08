@@ -16,7 +16,11 @@ body {
 }
 
 .container {
-  width: 90%;
+  width: 80%;
+  margin: auto;
+}
+.h-layout {
+  width: 95%;
   margin: auto;
 }
 h2 {
@@ -43,6 +47,19 @@ span {
 }
 
 /* media query */
+@media screen and (max-width: 1600px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 1420px) {
+  .container {
+    width: 95%;
+    margin: auto;
+  }
+}
+
 @media screen and (max-width: 650px) {
   span {
     font-size: 18px;
